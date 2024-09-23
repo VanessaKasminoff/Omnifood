@@ -1,5 +1,85 @@
+/*
+-STYLING SYSTEM-
+
+---TYPOGRAPHY---
+
+FONT SIZE SYSTEM (PX)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+FONT WEIGHTS
+Default: 400
+
+LINE HEIGHTS
+Default: 1
+
+SPACING SYSTEM (PX)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+---COLOR---
+
+Primary: #e67e22
+Tints:
+#cf711f
+#b8651b
+#a15818
+#8a4c14
+#733f11
+#5c320e
+#45260a
+#2e1907
+#170d03
+#000000
+Shades:
+#e98b38
+#eb984e
+#eea564
+#f0b27a
+#f3bf91
+#f5cba7
+#f8d8bd
+#fae5d3
+#fdf2e9
+#ffffff
+Accents:
+#b18700
+#798900
+#798900
+#007d41
+#00725f
+Greys: 
+#333
+
+
+---SHADOWS---
+
+
+---BORDER-RADIUS---
+
+
+---WHITESPACE---
+
+SPACING SYSTEM (PX)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
 }
