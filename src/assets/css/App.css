@@ -64,6 +64,8 @@ SPACING SYSTEM (PX)
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -78,7 +80,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #333;
@@ -117,6 +119,7 @@ body {
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
+  font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   transition: all 0.3s;
