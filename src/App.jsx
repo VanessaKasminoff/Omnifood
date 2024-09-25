@@ -46,7 +46,7 @@ function App() {
                 return <CustomerPhoto key={index} image={customer.image} />;
               })}
             </div>
-            <p>250,000+ meals delivered last year!</p>
+            <p className="delivered-text"><span>250,000+</span> meals delivered last year!</p>
           </div>
           </div>
           <div className="hero-img-section">
