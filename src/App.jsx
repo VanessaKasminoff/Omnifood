@@ -84,6 +84,21 @@ function App() {
             imgSrc={appImg1}
             imgAlt="An iPhone app screen with preferences selection"
           />
+          <Step
+            stepNumber="02"
+            title="Approve your weekly meal plan"
+            description="Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes."
+            imgSrc={appImg2}
+            imgAlt="An iPhone app screen with meal plan"
+            reverseOrder="reverse"
+          />
+          <Step
+            stepNumber="03"
+            title="Receive meals at convenient time"
+            description="Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!"
+            imgSrc={appImg3}
+            imgAlt="An iPhone app screen with personalized meal prep"
+          />
         </div>
       </main>
     </div>

@@ -105,9 +105,6 @@ body {
   height: 2.2rem;
 }
 
-/* .main_nav {
-} */
-
 .main-nav-list {
   display: flex;
   align-items: center;
@@ -272,4 +269,8 @@ body {
 
 .step-img {
   width: 50%;
+}
+
+.reverse {
+  order: -1;
 }
