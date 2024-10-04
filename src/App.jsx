@@ -8,9 +8,13 @@ import customer3 from "./assets/img/customers/customer-3.jpg";
 import customer4 from "./assets/img/customers/customer-4.jpg";
 import customer5 from "./assets/img/customers/customer-5.jpg";
 import customer6 from "./assets/img/customers/customer-6.jpg";
+import appImg1 from "./assets/img/app-img/app-screen-1.png";
+import appImg2 from "./assets/img/app-img/app-screen-2.png";
+import appImg3 from "./assets/img/app-img/app-screen-3.png";
 // COMPONENTS
 import CustomerPhoto from "./components/CustomerPhoto";
 import Header from "./components/header/Header";
+import Step from "./components/Step";
 
 function App() {
   const customers = [
@@ -62,6 +66,24 @@ function App() {
               />
             </div>
           </div>
+        </div>
+        <div className="how-section">
+          <div className="container">
+            <span className="how-subheading">How It Works</span>
+            <h2 className="heading-secondary">
+              Your daily dose of health in 3 simple steps
+            </h2>
+          </div>
+          <Step
+            stepNumber="01"
+            title="Tell us what you like (and what not)"
+            description="Never again waste time thinking about what to eat! Omnifood AI will
+          create a 100% personalized weekly meal plan just for you. It makes
+          sure you get all the nutrients and vitamins you need, no matter what
+          diet you follow!"
+            imgSrc={appImg1}
+            imgAlt="An iPhone app screen with preferences selection"
+          />
         </div>
       </main>
     </div>
