@@ -13,7 +13,7 @@ import appImg2 from "./assets/img/app-img/app-screen-2.png";
 import appImg3 from "./assets/img/app-img/app-screen-3.png";
 // COMPONENTS
 import CustomerPhoto from "./components/CustomerPhoto";
-import Header from "./components/header/Header";
+import Header from "./components/Header";
 import Step from "./components/Step";
 
 function App() {
