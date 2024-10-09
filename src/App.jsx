@@ -11,10 +11,16 @@ import customer6 from "./assets/img/customers/customer-6.jpg";
 import appImg1 from "./assets/img/app-img/app-screen-1.png";
 import appImg2 from "./assets/img/app-img/app-screen-2.png";
 import appImg3 from "./assets/img/app-img/app-screen-3.png";
+import logo1 from "./assets/img/logos/business-insider.png";
+import logo2 from "./assets/img/logos/forbes.png";
+import logo3 from "./assets/img/logos/techcrunch.png";
+import logo4 from "./assets/img/logos/the-new-york-times.png";
+import logo5 from "./assets/img/logos/usa-today.png";
 // COMPONENTS
 import CustomerPhoto from "./components/CustomerPhoto";
 import Header from "./components/Header";
 import Step from "./components/Step";
+import LogoPhoto from "./components/LogoPhoto";
 
 function App() {
   const customers = [
@@ -24,6 +30,14 @@ function App() {
     { image: customer4 },
     { image: customer5 },
     { image: customer6 },
+  ];
+
+  const logos = [
+    {image: logo1},
+    {image: logo2},
+    {image: logo3},
+    {image: logo4},
+    {image: logo5}
   ];
 
   return (
@@ -67,6 +81,18 @@ function App() {
             </div>
           </div>
         </div>
+
+        <div className="featured-section">
+          <div className="container">
+            <h2 className="heading-featured">As featured in</h2>
+            <div className="logos">
+                {logos.map((logo, index) => {
+                  return <LogoPhoto key={index} image={logo.image}/>
+                })}
+            </div>
+          </div>
+        </div>
+
         <div className="how-section">
           <div className="container">
             <span className="how-subheading">How It Works</span>
