@@ -1,6 +1,6 @@
 const Step = ({ stepNumber, title, description, imgSrc, imgAlt, reverseOrder }) => {
   return (
-    <div className="container grid grid--2-cols">
+    <div className="container grid grid--2-cols grid--center-margin">
       <div className="step-text-box">
         <p className="step-number">{stepNumber}</p>
         <h3 className="heading-tertiary">{title}</h3>

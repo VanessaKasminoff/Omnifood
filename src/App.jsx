@@ -94,7 +94,7 @@ function App() {
           />
           <Step
             stepNumber="03"
-            title="Receive meals at convenient time"
+            title="Receive meals at a convenient time"
             description="Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!"
             imgSrc={appImg3}
             imgAlt="An iPhone app screen with personalized meal prep"
