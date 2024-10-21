@@ -18,6 +18,7 @@ import logo4 from "./assets/img/logos/the-new-york-times.png";
 import logo5 from "./assets/img/logos/usa-today.png";
 import meal1 from "./assets/img/meals/meal-1.jpg";
 import meal2 from "./assets/img/meals/meal-2.jpg";
+import listIcon from "./assets/img/icons/check.svg";
 // COMPONENTS
 import CustomerPhoto from "./components/CustomerPhoto";
 import Header from "./components/Header";
@@ -137,31 +138,91 @@ function App() {
               Omnifood AI chooses from 5,000+ recipes
             </h2>
           </div>
-          <div className="container grid grid--3-cols">
-              <MealCard
-                imgSrc={meal1}
-                imgAlt="Three bowls of Japanese Gyozas"
-                title="Japanese Gyozas"
-                tag="Vegetarian"
-                tag2="Lactose-free"
-                mealAtt1="650 calories"
-                mealAtt2="NutriScore&reg; 74"
-                mealAtt3="4.9 rating (537)"
-              />
-              <MealCard
-                imgSrc={meal2}
-                imgAlt="A bowl of avocado salad"
-                title="Avocado Salad"
-                tag="Vegan"
-                tag2="Paleo"
-                mealAtt1="400 calories"
-                mealAtt2="NutriScore&reg; 92"
-                mealAtt3="4.8 rating (441)"
-              />
-              
+          <div className="container grid grid--3-cols margin-bottom-md">
+            <MealCard
+              imgSrc={meal1}
+              imgAlt="Three bowls of Japanese Gyozas"
+              title="Japanese Gyozas"
+              tag="Vegetarian"
+              tag2="Lactose-free"
+              mealAtt1="650 calories"
+              mealAtt2="NutriScore&reg; 74"
+              mealAtt3="4.9 rating (537)"
+            />
+            <MealCard
+              imgSrc={meal2}
+              imgAlt="A bowl of avocado salad"
+              title="Avocado Salad"
+              tag="Vegan"
+              tag2="Paleo"
+              mealAtt1="400 calories"
+              mealAtt2="NutriScore&reg; 92"
+              mealAtt3="4.8 rating (441)"
+            />
+            <div className="diets">
+              <h3 className="heading-tertiary">Works with any diet</h3>
+              <ul className="list">
+                <li className="list-item">
+                  <span>
+                    <img className="list-icon" src={listIcon} />
+                  </span>
+                  Vegetarian
+                </li>
+                <li className="list-item">
+                  <span>
+                    <img className="list-icon" src={listIcon} />
+                  </span>
+                  Vegan
+                </li>
+                <li className="list-item">
+                  <span>
+                    <img className="list-icon" src={listIcon} />
+                  </span>
+                  Pescatarian
+                </li>
+                <li className="list-item">
+                  <span>
+                    <img className="list-icon" src={listIcon} />
+                  </span>
+                  Gluten-free
+                </li>
+                <li className="list-item">
+                  <span>
+                    <img className="list-icon" src={listIcon} />
+                  </span>
+                  Lactose-free
+                </li>
+                <li className="list-item">
+                  <span>
+                    <img className="list-icon" src={listIcon} />
+                  </span>
+                  Keto
+                </li>
+                <li className="list-item">
+                  <span>
+                    <img className="list-icon" src={listIcon} />
+                  </span>
+                  Paleo
+                </li>
+                <li className="list-item">
+                  <span>
+                    <img className="list-icon" src={listIcon} />
+                  </span>
+                  Low FODMAP
+                </li>
+                <li className="list-item">
+                  <span>
+                    <img className="list-icon" src={listIcon} />
+                  </span>
+                  Kid-friendly
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="container all-recipes">
+            <a href="#" className="link">See all recipes &rarr;</a>
           </div>
         </div>
-
       </main>
     </div>
   );
