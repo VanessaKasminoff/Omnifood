@@ -16,11 +16,14 @@ import logo2 from "./assets/img/logos/forbes.png";
 import logo3 from "./assets/img/logos/techcrunch.png";
 import logo4 from "./assets/img/logos/the-new-york-times.png";
 import logo5 from "./assets/img/logos/usa-today.png";
+import meal1 from "./assets/img/meals/meal-1.jpg";
+import meal2 from "./assets/img/meals/meal-2.jpg";
 // COMPONENTS
 import CustomerPhoto from "./components/CustomerPhoto";
 import Header from "./components/Header";
 import Step from "./components/Step";
 import LogoPhoto from "./components/LogoPhoto";
+import MealCard from "./components/Meal";
 
 function App() {
   const customers = [
@@ -33,11 +36,11 @@ function App() {
   ];
 
   const logos = [
-    {image: logo1},
-    {image: logo2},
-    {image: logo3},
-    {image: logo4},
-    {image: logo5}
+    { image: logo1 },
+    { image: logo2 },
+    { image: logo3 },
+    { image: logo4 },
+    { image: logo5 },
   ];
 
   return (
@@ -86,9 +89,9 @@ function App() {
           <div className="container">
             <h2 className="heading-featured">As featured in</h2>
             <div className="logos">
-                {logos.map((logo, index) => {
-                  return <LogoPhoto key={index} image={logo.image}/>
-                })}
+              {logos.map((logo, index) => {
+                return <LogoPhoto key={index} image={logo.image} />;
+              })}
             </div>
           </div>
         </div>
@@ -126,6 +129,39 @@ function App() {
             imgAlt="An iPhone app screen with personalized meal prep"
           />
         </div>
+
+        <div className="meals-section">
+          <div className="container">
+            <span className="how-subheading">Meals</span>
+            <h2 className="heading-secondary">
+              Omnifood AI chooses from 5,000+ recipes
+            </h2>
+          </div>
+          <div className="container grid grid--3-cols">
+              <MealCard
+                imgSrc={meal1}
+                imgAlt="Three bowls of Japanese Gyozas"
+                title="Japanese Gyozas"
+                tag="Vegetarian"
+                tag2="Lactose-free"
+                mealAtt1="650 calories"
+                mealAtt2="NutriScore&reg; 74"
+                mealAtt3="4.9 rating (537)"
+              />
+              <MealCard
+                imgSrc={meal2}
+                imgAlt="A bowl of avocado salad"
+                title="Avocado Salad"
+                tag="Vegan"
+                tag2="Paleo"
+                mealAtt1="400 calories"
+                mealAtt2="NutriScore&reg; 92"
+                mealAtt3="4.8 rating (441)"
+              />
+              
+          </div>
+        </div>
+
       </main>
     </div>
   );
