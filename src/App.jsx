@@ -19,12 +19,17 @@ import logo5 from "./assets/img/logos/usa-today.png";
 import meal1 from "./assets/img/meals/meal-1.jpg";
 import meal2 from "./assets/img/meals/meal-2.jpg";
 import listIcon from "./assets/img/icons/check.svg";
+import customerDave from "./assets/img/customers/dave.jpg";
+import customerBen from "./assets/img/customers/ben.jpg";
+import customerHannah from "./assets/img/customers/hannah.jpg";
+import customerSteve from "./assets/img/customers/steve.jpg";
 // COMPONENTS
 import CustomerPhoto from "./components/CustomerPhoto";
 import Header from "./components/Header";
 import Step from "./components/Step";
 import LogoPhoto from "./components/LogoPhoto";
 import MealCard from "./components/Meal";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   const customers = [
@@ -220,8 +225,42 @@ function App() {
             </div>
           </div>
           <div className="container all-recipes">
-            <a href="#" className="link">See all recipes &rarr;</a>
+            <a href="#" className="link">
+              See all recipes &rarr;
+            </a>
           </div>
+        </div>
+
+        <div className="testimonials-section grid grid--2-cols">
+          <div className="testimonials-container">
+            <span className="how-subheading">Testimonials</span>
+            <h2 className="heading-secondary">
+              Once you try it, you can't go back
+            </h2>
+            <div className="testimonials">
+              <Testimonial
+                imgSrc={customerDave}
+                text="Inexpensive, healthy and great tasting meals, without even having to order manually! It feels truly magical."
+                name="&mdash; Dave Bryson"
+              />
+              <Testimonial
+                imgSrc={customerBen}
+                text="The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore!"
+                name="&mdash; Ben Hadley"
+              />
+              <Testimonial
+                imgSrc={customerSteve}
+                text="Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now!"
+                name="&mdash; Steve Miller"
+              />
+              <Testimonial
+                imgSrc={customerHannah}
+                text="I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic."
+                name="&mdash; Hannah Smith"
+              />
+            </div>
+          </div>
+          <div className="gallery">Gallery</div>
         </div>
       </main>
     </div>
