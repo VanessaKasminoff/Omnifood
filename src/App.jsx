@@ -23,6 +23,18 @@ import customerDave from "./assets/img/customers/dave.jpg";
 import customerBen from "./assets/img/customers/ben.jpg";
 import customerHannah from "./assets/img/customers/hannah.jpg";
 import customerSteve from "./assets/img/customers/steve.jpg";
+import gallery1 from "./assets/img/gallery/gallery-1.jpg"
+import gallery2 from "./assets/img/gallery/gallery-2.jpg"
+import gallery3 from "./assets/img/gallery/gallery-3.jpg"
+import gallery4 from "./assets/img/gallery/gallery-4.jpg"
+import gallery5 from "./assets/img/gallery/gallery-5.jpg"
+import gallery6 from "./assets/img/gallery/gallery-6.jpg"
+import gallery7 from "./assets/img/gallery/gallery-7.jpg"
+import gallery8 from "./assets/img/gallery/gallery-8.jpg"
+import gallery9 from "./assets/img/gallery/gallery-9.jpg"
+import gallery10 from "./assets/img/gallery/gallery-10.jpg"
+import gallery11 from "./assets/img/gallery/gallery-11.jpg"
+import gallery12 from "./assets/img/gallery/gallery-12.jpg"
 // COMPONENTS
 import CustomerPhoto from "./components/CustomerPhoto";
 import Header from "./components/Header";
@@ -30,6 +42,7 @@ import Step from "./components/Step";
 import LogoPhoto from "./components/LogoPhoto";
 import MealCard from "./components/Meal";
 import Testimonial from "./components/Testimonial";
+import GalleryPhoto from "./components/GalleryPhoto";
 
 function App() {
   const customers = [
@@ -47,6 +60,21 @@ function App() {
     { image: logo3 },
     { image: logo4 },
     { image: logo5 },
+  ];
+
+  const galleryImgs = [
+    {image: gallery1},
+    {image: gallery2},
+    {image: gallery3},
+    {image: gallery4},
+    {image: gallery5},
+    {image: gallery6},
+    {image: gallery7},
+    {image: gallery8},
+    {image: gallery9},
+    {image: gallery10},
+    {image: gallery11},
+    {image: gallery12}
   ];
 
   return (
@@ -231,7 +259,7 @@ function App() {
           </div>
         </div>
 
-        <div className="testimonials-section grid grid--2-cols">
+        <div className="testimonials-section">
           <div className="testimonials-container">
             <span className="how-subheading">Testimonials</span>
             <h2 className="heading-secondary">
@@ -260,7 +288,11 @@ function App() {
               />
             </div>
           </div>
-          <div className="gallery">Gallery</div>
+          <div className="gallery">
+            {galleryImgs.map((galleryImg, index) => {
+              return <GalleryPhoto key={index} image={galleryImg.image}/>
+            })}
+          </div>
         </div>
       </main>
     </div>
