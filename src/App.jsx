@@ -43,6 +43,7 @@ import LogoPhoto from "./components/LogoPhoto";
 import MealCard from "./components/Meal";
 import Testimonial from "./components/Testimonial";
 import GalleryPhoto from "./components/GalleryPhoto";
+import PricingCard from "./components/PricingCard";
 
 function App() {
   const customers = [
@@ -292,6 +293,33 @@ function App() {
             {galleryImgs.map((galleryImg, index) => {
               return <GalleryPhoto key={index} image={galleryImg.image}/>
             })}
+          </div>
+        </div>
+
+        <div className="pricing-section">
+        <div className="container">
+            <span className="how-subheading">Pricing</span>
+            <h2 className="heading-secondary">
+              Eating well without breaking the bank
+            </h2>
+          </div>
+          <div className="container grid grid--2-cols pricing-grid">
+            <PricingCard
+              name="starter"
+              price="399"
+              text="per month. That's just $13 per meal!"
+              list1="1 meal per day"
+              list2="Order from 11am to 9pm"
+              list3="Delivery is free"
+            />
+            <PricingCard
+              name="complete"
+              price="649"
+              text="per month. That's just $11 per meal!"
+              list1="2 meals per day"
+              list2="Order 24/7"
+              list3="Delivery is free"
+            />
           </div>
         </div>
       </main>
