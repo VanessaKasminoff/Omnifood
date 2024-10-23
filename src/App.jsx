@@ -410,7 +410,6 @@ function App() {
                 role="img"
                 aria-label="Woman enjoying food"
               >
-                Img
               </div>
             </div>
           </div>
