@@ -372,7 +372,7 @@ function App() {
                 </p>
                 <form className="cta-form" action="#">
                   <div>
-                    <label for="full-name">Full Name</label>
+                    <label for="full-name">Full Name*</label>
                     <input
                       id="full-name"
                       placeholder="John Smith"
@@ -381,7 +381,7 @@ function App() {
                     />
                   </div>
                   <div>
-                    <label for="email">Email Address</label>
+                    <label for="email">Email Address*</label>
                     <input
                       id="email"
                       placeholder="example@example.com"
@@ -391,7 +391,7 @@ function App() {
                   </div>
                   <div>
                     <label for="select-where">
-                      Where did you hear about us?
+                      Where did you hear about us?*
                     </label>
                     <select id="select-where" required>
                       <option value="">--Please choose an option--</option>
@@ -402,7 +402,7 @@ function App() {
                       <option value="other">Other</option>
                     </select>
                   </div>
-                  <button className="btn">Sign up now</button>
+                  <button className="btn btn--form">Sign up now</button>
                 </form>
               </div>
               <div

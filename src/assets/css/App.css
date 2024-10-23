@@ -76,6 +76,11 @@ SPACING SYSTEM (PX)
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
 html {
   /* font-size: 10px; */
   /* 10px / 16px = 0.625 = 62.5% */
@@ -171,6 +176,7 @@ body {
   margin-bottom: 4.8rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -180,6 +186,9 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   transition: all 0.3s;
+
+  border: none;
+  cursor: pointer;
 }
 
 .btn-full:link,
@@ -678,13 +687,17 @@ body {
 }
 
 .cta {
-  height: 50rem;
   overflow: hidden;
   display: grid;
   grid-template-columns: 2fr 1fr;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 1.1rem;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 
 .cta-textbox {
@@ -718,4 +731,40 @@ body {
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  color: inherit;
+  background-color: #fdf2e9;
+  border-radius: 0.9rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #333;
 }
