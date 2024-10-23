@@ -23,18 +23,22 @@ import customerDave from "./assets/img/customers/dave.jpg";
 import customerBen from "./assets/img/customers/ben.jpg";
 import customerHannah from "./assets/img/customers/hannah.jpg";
 import customerSteve from "./assets/img/customers/steve.jpg";
-import gallery1 from "./assets/img/gallery/gallery-1.jpg"
-import gallery2 from "./assets/img/gallery/gallery-2.jpg"
-import gallery3 from "./assets/img/gallery/gallery-3.jpg"
-import gallery4 from "./assets/img/gallery/gallery-4.jpg"
-import gallery5 from "./assets/img/gallery/gallery-5.jpg"
-import gallery6 from "./assets/img/gallery/gallery-6.jpg"
-import gallery7 from "./assets/img/gallery/gallery-7.jpg"
-import gallery8 from "./assets/img/gallery/gallery-8.jpg"
-import gallery9 from "./assets/img/gallery/gallery-9.jpg"
-import gallery10 from "./assets/img/gallery/gallery-10.jpg"
-import gallery11 from "./assets/img/gallery/gallery-11.jpg"
-import gallery12 from "./assets/img/gallery/gallery-12.jpg"
+import gallery1 from "./assets/img/gallery/gallery-1.jpg";
+import gallery2 from "./assets/img/gallery/gallery-2.jpg";
+import gallery3 from "./assets/img/gallery/gallery-3.jpg";
+import gallery4 from "./assets/img/gallery/gallery-4.jpg";
+import gallery5 from "./assets/img/gallery/gallery-5.jpg";
+import gallery6 from "./assets/img/gallery/gallery-6.jpg";
+import gallery7 from "./assets/img/gallery/gallery-7.jpg";
+import gallery8 from "./assets/img/gallery/gallery-8.jpg";
+import gallery9 from "./assets/img/gallery/gallery-9.jpg";
+import gallery10 from "./assets/img/gallery/gallery-10.jpg";
+import gallery11 from "./assets/img/gallery/gallery-11.jpg";
+import gallery12 from "./assets/img/gallery/gallery-12.jpg";
+import featureIcon1 from "./assets/img/icons/infinite.svg";
+import featureIcon2 from "./assets/img/icons/leaf.svg";
+import featureIcon3 from "./assets/img/icons/recycle.svg";
+import featureIcon4 from "./assets/img/icons/pause.svg";
 // COMPONENTS
 import CustomerPhoto from "./components/CustomerPhoto";
 import Header from "./components/Header";
@@ -44,6 +48,7 @@ import MealCard from "./components/Meal";
 import Testimonial from "./components/Testimonial";
 import GalleryPhoto from "./components/GalleryPhoto";
 import PricingCard from "./components/PricingCard";
+import FeatureCard from "./components/FeatureCard";
 
 function App() {
   const customers = [
@@ -64,18 +69,18 @@ function App() {
   ];
 
   const galleryImgs = [
-    {image: gallery1},
-    {image: gallery2},
-    {image: gallery3},
-    {image: gallery4},
-    {image: gallery5},
-    {image: gallery6},
-    {image: gallery7},
-    {image: gallery8},
-    {image: gallery9},
-    {image: gallery10},
-    {image: gallery11},
-    {image: gallery12}
+    { image: gallery1 },
+    { image: gallery2 },
+    { image: gallery3 },
+    { image: gallery4 },
+    { image: gallery5 },
+    { image: gallery6 },
+    { image: gallery7 },
+    { image: gallery8 },
+    { image: gallery9 },
+    { image: gallery10 },
+    { image: gallery11 },
+    { image: gallery12 },
   ];
 
   return (
@@ -291,13 +296,13 @@ function App() {
           </div>
           <div className="gallery">
             {galleryImgs.map((galleryImg, index) => {
-              return <GalleryPhoto key={index} image={galleryImg.image}/>
+              return <GalleryPhoto key={index} image={galleryImg.image} />;
             })}
           </div>
         </div>
 
         <div className="pricing-section">
-        <div className="container">
+          <div className="container">
             <span className="how-subheading">Pricing</span>
             <h2 className="heading-secondary">
               Eating well without breaking the bank
@@ -319,6 +324,33 @@ function App() {
               list1="2 meals per day"
               list2="Order 24/7"
               list3="Delivery is free"
+            />
+          </div>
+
+          <div className="container grid plan">
+            <aside className="plan-details">Prices include all applicable taxes. You can cancel at any time. Both plans include the following:</aside>
+          </div>
+
+          <div className="container grid grid--4-cols">
+            <FeatureCard
+              imgSrc={featureIcon1}
+              title="Never cook again"
+              desc="Our subscriptions cover 365 days per year, even including major holidays."
+            />
+            <FeatureCard
+              imgSrc={featureIcon2}
+              title="Local and organic"
+              desc="Our cooks only use local, fresh, and organic products to prepare your meals."
+            />
+            <FeatureCard
+              imgSrc={featureIcon3}
+              title="No waste"
+              desc="All our partners only use reusable containers to package all your meals."
+            />
+            <FeatureCard
+              imgSrc={featureIcon4}
+              title="Pause anytime"
+              desc="Going on vacation? Just pause your subscription, and we refund unused days."
             />
           </div>
         </div>
