@@ -49,6 +49,7 @@ import Testimonial from "./components/Testimonial";
 import GalleryPhoto from "./components/GalleryPhoto";
 import PricingCard from "./components/PricingCard";
 import FeatureCard from "./components/FeatureCard";
+import Footer from "./components/Footer";
 
 function App() {
   const customers = [
@@ -415,21 +416,9 @@ function App() {
           </div>
         </div>
       </main>
+      <Footer/>
     </div>
   );
 }
 
 export default App;
-
-/*
-- Logo + Navigation
-- Hero
-- Featured in
-- How it works
-- Diets
-- Meals (and list of diets)
-- Testimonials + gallery
-- Pricing + features
-- CTA
-- Footer
-*/

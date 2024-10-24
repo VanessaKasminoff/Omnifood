@@ -4,7 +4,9 @@ import Logo from "../assets/img/omnifood-logo.png";
 const Header = () => {
   return (
     <header className="header">
-      <img className="logo" alt="Omnifood logo" src={Logo} />
+      <a href="#">
+        <img className="logo" alt="Omnifood logo" src={Logo} />
+      </a>
       <nav className="main-nav">
         <ul className="main-nav-list">
           <li>

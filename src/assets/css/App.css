@@ -330,6 +330,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-margin {
   margin-bottom: 9.6rem;
   align-items: center;
@@ -767,4 +771,10 @@ body {
 .btn--form:hover {
   background-color: #fff;
   color: #333;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  padding: 9.6rem 0;
 }
