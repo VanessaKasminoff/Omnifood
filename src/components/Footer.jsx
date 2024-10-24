@@ -6,7 +6,7 @@ import xLogo from "../assets/img/icons/x-logo.svg";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container grid grid--5-cols">
+      <div className="container grid grid--footer">
         <div className="logo-col">
           <a className="footer-logo" href="#">
             <img className="logo" alt="Omnifood logo" src={Logo} />
@@ -14,18 +14,18 @@ const Footer = () => {
 
           <ul className="social-links">
             <li>
-              <a href="#">
-                <img src={instagramLogo} alt="Instagram logo" />
+              <a className="footer-link" href="#">
+                <img className="social-icon" src={instagramLogo} alt="Instagram logo" />
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src={facebookLogo} alt="Facebook logo" />
+              <a className="footer-link" href="#">
+                <img className="social-icon" src={facebookLogo} alt="Facebook logo" />
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src={xLogo} alt="X logo" />
+              <a className="footer-link" href="#">
+                <img className="social-icon" src={xLogo} alt="X logo" />
               </a>
             </li>
           </ul>
@@ -38,11 +38,11 @@ const Footer = () => {
         <div className="address-col">
           <p className="footer-heading">Contact us</p>
           <address className="contacts">
-            <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+            <p className="address">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
             <p>
-              <a href="tel:415-201-6370">415-201-6370</a>
+              <a className="footer-link" href="tel:415-201-6370">415-201-6370</a>
               <br />
-              <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+              <a className="footer-link" href="mailto:hello@omnifood.com">hello@omnifood.com</a>
             </p>
           </address>
         </div>
@@ -50,16 +50,16 @@ const Footer = () => {
           <p className="footer-heading">Account</p>
           <ul className="footer-nav">
             <li>
-              <a href="#">Create account</a>
+              <a className="footer-link" href="#">Create account</a>
             </li>
             <li>
-              <a href="#">Sign in</a>
+              <a className="footer-link" href="#">Sign in</a>
             </li>
             <li>
-              <a href="#">iOS app</a>
+              <a className="footer-link" href="#">iOS app</a>
             </li>
             <li>
-              <a href="#">Android app</a>
+              <a className="footer-link" href="#">Android app</a>
             </li>
           </ul>
         </nav>
@@ -67,16 +67,16 @@ const Footer = () => {
           <p className="footer-heading">Company</p>
           <ul className="footer-nav">
             <li>
-              <a href="#">About Omnifood</a>
+              <a className="footer-link" href="#">About Omnifood</a>
             </li>
             <li>
-              <a href="#">For business</a>
+              <a className="footer-link" href="#">For business</a>
             </li>
             <li>
-              <a href="#">Cooking partners</a>
+              <a className="footer-link" href="#">Cooking partners</a>
             </li>
             <li>
-              <a href="#">Careers</a>
+              <a className="footer-link" href="#">Careers</a>
             </li>
           </ul>
         </nav>
@@ -84,16 +84,16 @@ const Footer = () => {
           <p className="footer-heading">Resources</p>
           <ul className="footer-nav">
             <li>
-              <a href="#">Recipe directory</a>
+              <a className="footer-link" href="#">Recipe directory</a>
             </li>
             <li>
-              <a href="#">Help center</a>
+              <a className="footer-link" href="#">Help center</a>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <a className="footer-link" href="#">Privacy Policy</a>
             </li>
             <li>
-              <a href="#">Terms of Service</a>
+              <a className="footer-link" href="#">Terms of Service</a>
             </li>
           </ul>
         </nav>
