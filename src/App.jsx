@@ -138,7 +138,7 @@ function App() {
           </div>
         </div>
 
-        <div className="how-section">
+        <div id="how-it-works" className="how-section">
           <div className="container">
             <span className="how-subheading">How It Works</span>
             <h2 className="heading-secondary">
@@ -172,7 +172,7 @@ function App() {
           />
         </div>
 
-        <div className="meals-section">
+        <div id="meals" className="meals-section">
           <div className="container">
             <span className="how-subheading">Meals</span>
             <h2 className="heading-secondary">
@@ -267,7 +267,7 @@ function App() {
           </div>
         </div>
 
-        <div className="testimonials-section">
+        <div id="testimonials" className="testimonials-section">
           <div className="testimonials-container">
             <span className="how-subheading">Testimonials</span>
             <h2 className="heading-secondary">
@@ -303,7 +303,7 @@ function App() {
           </div>
         </div>
 
-        <div className="pricing-section">
+        <div id="pricing" className="pricing-section">
           <div className="container">
             <span className="how-subheading">Pricing</span>
             <h2 className="heading-secondary">
