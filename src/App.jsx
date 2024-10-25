@@ -1,5 +1,6 @@
 // CSS
 import "./assets/css/App.css";
+import "./assets/css/queries.css";
 // IMAGES
 import heroImg from "./assets/img/hero.png";
 import customer1 from "./assets/img/customers/customer-1.jpg";
