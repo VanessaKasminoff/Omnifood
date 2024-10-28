@@ -55,6 +55,10 @@
     font-size: 50%;
   }
 
+  .no-scroll {
+    overflow-y: hidden;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;

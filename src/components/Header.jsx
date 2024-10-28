@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Logo from "../assets/img/omnifood-logo.png";
 import menuMobile from "../assets/img/icons/mobile-menu.svg";
 import menuClose from "../assets/img/icons/menu-close.svg";
 import MobileNav from "./MobileNav";
 
 const Header = () => {
-  const [click, setClick] = useState(false);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const HamburgerIcon = () => {
-    if (!click) {
+    if (!mobileNavOpen) {
       return (
         <img
           className="icon-mobile-nav"
@@ -27,7 +27,19 @@ const Header = () => {
     }
   };
 
-  const closeMenu = () => setClick(false);
+  const closeMenu = () => setMobileNavOpen(false);
+
+  useEffect(() => {
+    if (mobileNavOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, [mobileNavOpen]);
 
   return (
     <header className="header">
@@ -63,10 +75,10 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <button className="btn-mobile-nav" onClick={() => setClick(!click)}>
+      <button className="btn-mobile-nav" onClick={() => setMobileNavOpen(!mobileNavOpen)}>
         {HamburgerIcon()}
       </button>
-      {click && <MobileNav isClicked={true} closeMenu={closeMenu} />}
+      {mobileNavOpen && <MobileNav isOpen={true} closeMenu={closeMenu} />}
     </header>
   );
 };
