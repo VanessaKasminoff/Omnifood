@@ -12,7 +12,7 @@ const Form = () => {
             </p>
             <form className="cta-form" action="#">
               <div>
-                <label for="full-name">Full Name*</label>
+                <label htmlFor="full-name">Full Name*</label>
                 <input
                   id="full-name"
                   placeholder="John Smith"
@@ -21,7 +21,7 @@ const Form = () => {
                 />
               </div>
               <div>
-                <label for="email">Email Address*</label>
+                <label htmlFor="email">Email Address*</label>
                 <input
                   id="email"
                   placeholder="example@example.com"
@@ -30,7 +30,7 @@ const Form = () => {
                 />
               </div>
               <div>
-                <label for="select-where">Where did you hear about us?*</label>
+                <label htmlFor="select-where">Where did you hear about us?*</label>
                 <select id="select-where" required>
                   <option value="">--Please choose an option--</option>
                   <option value="friends">Friends and family</option>
