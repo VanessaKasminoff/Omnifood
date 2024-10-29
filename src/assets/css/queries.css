@@ -92,7 +92,7 @@
   }
 
   .meal-content {
-    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    padding: 2.4rem 2rem 2rem 2rem;
   }
 
   .testimonials-section {
@@ -150,6 +150,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
   }
 
   .mobile-main-nav-list {
@@ -172,5 +173,130 @@
   .mobile-main-nav-link:hover,
   .mobile-main-nav-link:active {
     color: #cf711f;
+  }
+
+  .mobile-main-nav-link.nav-cta:link,
+  .mobile-main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    background-color: #e67e22;
+    color: #fff;
+  }
+
+  .mobile-main-nav-link.nav-cta:hover,
+  .mobile-main-nav-link.nav-cta:active {
+    background-color: #cf711f;
+  }
+}
+
+/* BELOW 656px */
+
+@media (max-width: 41em) {
+  html {
+    /* 7px / 16px = 43.75% */
+    font-size: 43.75%;
+  }
+
+  .logos img {
+    height: 1.8rem;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 6.4rem;
+  }
+
+  .reverse {
+    order: 1;
+  }
+
+  .step-img {
+    width: 23%;
+  }
+
+  .step-img-box::before {
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: #fdf2e9;
+    z-index: -2;
+  }
+
+  .step-img-box::after {
+    width: 35%;
+    padding-bottom: 35%;
+    background-color: #fae5d3;
+    z-index: -1;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 6.4rem;
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pricing-plan.complete::after {
+    top: 8%;
+    right: -11%;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 6.4rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 6rem;
+  }
+}
+
+/* BELOW 416px (phones) */
+@media (max-width: 26em) {
+  .hero {
+    padding: 0 5rem;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+
+  .logos img {
+    height: 1.5rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .meal-content {
+    justify-self: center;
+  }
+
+  .pricing-plan.complete::after {
+    top: 6%;
+    right: -18%;
   }
 }
