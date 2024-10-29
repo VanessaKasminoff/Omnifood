@@ -1,16 +1,10 @@
 # About this Project :D
 
-_Not finished yet!_
-
 I developed a modern, clean responsive landing page for Omnifood, a fictional company specializing in AI-powered healthy meal prep and delivery.
 
 ### Responsive Design (Built with React)
 
 This project started as part of a Udemy course on responsive design using vanilla HTML and CSS. I took the initiative to build it using React to enhance its interactivity and structure, while showcasing my skills in a more dynamic environment.
-
-## Updates / Notes
-
-Mobile version is not optimized, so may appear broken on small devices (_currently fixing!!!_)
 
 ## About Omnifood
 
